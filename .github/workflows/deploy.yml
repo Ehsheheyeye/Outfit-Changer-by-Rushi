@@ -14,6 +14,7 @@ jobs:
 
       - name: Install and Build 🔧
         run: |
+          cd gemini-virtual-try-on.zip
           npm install
           npm run build
 
@@ -21,4 +22,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: dist
+          folder: gemini-virtual-try-on.zip/dist
